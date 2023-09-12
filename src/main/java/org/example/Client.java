@@ -12,7 +12,7 @@ public class Client {
         Socket clientSocket;
 
         try (
-                BufferedReader br = new BufferedReader(new FileReader("/Users/eugen/Documents/Games/Settings.txt"))) {
+                BufferedReader br = new BufferedReader(new FileReader("src/main/resources/Settings.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 builder.append(line);

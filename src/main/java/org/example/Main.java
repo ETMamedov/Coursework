@@ -11,8 +11,9 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
+
         try (
-                FileWriter writer = new FileWriter("/Users/eugen/Documents/Games/Settings.txt", false)) {
+                FileWriter writer = new FileWriter("src/main/resources/Settings.txt", false)) {
             writer.append(Integer.valueOf(port).toString());
             writer.flush();
         } catch (IOException e) {

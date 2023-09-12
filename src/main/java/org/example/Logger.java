@@ -10,7 +10,7 @@ public class Logger {
             .format(LocalDateTime.now());
 
         public static void logger(String text){
-        try (FileWriter writer = new FileWriter("/Users/eugen/Documents/Games/file.log", true)) {
+        try (FileWriter writer = new FileWriter("src/main/resources/file.log", true)) {
             writer.write(time +" "+text+"\n");
             writer.flush();
         } catch (IOException e) {
